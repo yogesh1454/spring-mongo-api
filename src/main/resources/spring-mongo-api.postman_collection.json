@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "838bce14-ae4e-46cd-bdca-9438c99a440d",
+		"name": "spring-mongo-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "partial-update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"intro\",\n    \"creator\": \"test2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/landing-page/api/v1/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"landing-page",
+						"api",
+						"v1",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/landing-page/api/v1/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"landing-page",
+						"api",
+						"v1",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset-content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/landing-page/api/v1/content/reset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"landing-page",
+						"api",
+						"v1",
+						"content",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-new-content-alway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"test\",\n    \"creator\": \"test1\",\n    \"content-type\": \"text/markdon\",\n    \"text\": \"Mark down content for the intro\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/landing-page/api/v1/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"landing-page",
+						"api",
+						"v1",
+						"content"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
